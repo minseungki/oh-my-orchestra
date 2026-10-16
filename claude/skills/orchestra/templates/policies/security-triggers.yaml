@@ -1,0 +1,21 @@
+# 변경 파일 경로나 diff 내용이 아래 패턴과 일치하면 orc-security-reviewer를 호출한다
+path_patterns:
+  - "**/auth/**"
+  - "**/login/**"
+  - "**/payment/**"
+  - "**/billing/**"
+  - "**/security/**"
+  - "**/config/**"
+  - "**/*.properties"
+  - "**/*.yml"
+  - "**/*.yaml"
+content_keywords:
+  - "password"
+  - "token"
+  - "secret"
+  - "apiKey"
+  - "Authorization"
+  - "cookie"
+  - "session"
+  - "encrypt"
+  - "decrypt"

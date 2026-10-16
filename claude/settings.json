@@ -1,0 +1,39 @@
+{
+  "model": "sonnet",
+  "enabledPlugins": {
+    "ui-ux-pro-max@ui-ux-pro-max-skill": true,
+    "impeccable@impeccable": true
+  },
+  "extraKnownMarketplaces": {
+    "ui-ux-pro-max-skill": {
+      "source": {
+        "source": "github",
+        "repo": "nextlevelbuilder/ui-ux-pro-max-skill"
+      }
+    },
+    "impeccable": {
+      "source": {
+        "source": "github",
+        "repo": "pbakaus/impeccable"
+      }
+    }
+  },
+  "autoUpdatesChannel": "latest",
+  "tui": "fullscreen",
+  "skillOverrides": {
+    "design-taste-frontend-v1": "off",
+    "find-skills": "off"
+  },
+  "permissions": {
+    "defaultMode": "auto",
+    "deny": [
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(rm -rf *)",
+      "PowerShell(git commit *)",
+      "PowerShell(git push *)",
+      "PowerShell(Remove-Item * -Recurse *)"
+    ]
+  },
+  "language": "korean"
+}

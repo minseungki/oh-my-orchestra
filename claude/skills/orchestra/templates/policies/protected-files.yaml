@@ -1,0 +1,13 @@
+# 보호 파일 정책 (1단계: 에이전트가 읽고 지키는 규칙 / 2단계에서 훅으로 강제 예정)
+never_read:
+  - ".env"
+  - ".env.*"
+  - "**/*.pem"
+  - "**/*.key"
+read_only:
+  - ".github/workflows/**"
+requires_approval:
+  - "package.json"
+  - "package-lock.json"
+  - "**/build.gradle"
+  - "**/pom.xml"
